@@ -1,33 +1,19 @@
-/* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
-}
 
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-@media screen and (max-width: 800px) {
-    .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-  }
 header {
     border: 1px solid rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
     justify-content: space-between;
     position: sticky;
     top: 0%;
-   height: 90px;
-
+   height: 100%;
+   
 
 }
 
 .navigation {
     display: flex;
     position: relative;
+   
     
 
 }
@@ -51,6 +37,7 @@ header {
     width: 50%;
     justify-content: center;
     margin-top: 4%;
+    height: 100%;
 }
 
 .nav-links a {
@@ -131,6 +118,7 @@ header {
 
 .container {
     padding: 1%;
+    
 }
 
 .general-infos-container {
@@ -139,11 +127,13 @@ header {
     justify-content: center;
     grid-row: 2/4;
     grid-column: 2/3;
+    
 }
 
 .Docplanner-sygnet {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .general-infos-container h1 {
@@ -174,8 +164,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-left: 7%;
-    height: 332px;
+    height: 100%;
     padding-left: 20px;
+    width: 100%;
     
     
 }
@@ -186,6 +177,7 @@ header {
     color: hsla(0, 0%, 100%, .7);
     font-family: Century Gothic;
     font-weight: lighter;
+    flex-wrap: wrap;
 
 }
 
@@ -201,6 +193,7 @@ header {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-left: 20px;
+    flex-wrap: wrap;
     
 
 }
@@ -216,6 +209,7 @@ header {
     font-size: larger;
     text-decoration-color: white;
     color: white;
+    flex-wrap: wrap;
     
 }
 .countries-existing2 {
@@ -229,6 +223,7 @@ header {
     font-size: larger;
     text-decoration-color: white;
     color: white;
+    flex-wrap: wrap;
 }
 .countries-existing3 {
     margin-left: 15px;
@@ -240,6 +235,7 @@ header {
     text-decoration-color: white;
     color: white;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .services-container-for-patients {
@@ -280,8 +276,13 @@ header {
 
 .adress-container {
     display: flex;
-    width: 100%;
+
     align-items: center;
+    
+    
+    
+   
+  
 }
 
 .adress-container h1 {
@@ -291,13 +292,17 @@ header {
     font-weight: lighter;
     margin-left: 130px;
     text-size-adjust: 100px;
-    margin-top:50px;
     font-size: 33px;
+    
+    
+    
 }
 
 .adress-list-of-links {
-    width: 70%;
+    width: 100%;
     margin-left: 10%;
+    flex-wrap: wrap;
+    height: 100%;
     
 }
 
@@ -307,12 +312,14 @@ header {
     margin: 10;
     padding: 10;
     overflow: hidden;
+    flex-wrap: wrap;
     
 }
 
 .adress-list-of-links li {
     float: left;
     margin-right: 15px;
+    flex-wrap: wrap;
    
 }
 
@@ -320,6 +327,7 @@ header {
    font-size: 19px;
     text-decoration: none;
     color: gray;
+    flex-wrap: wrap;
 }
 
 .adress-list-of-links img {
@@ -329,7 +337,7 @@ header {
 
 .stats-container {
     background: #e5faf8;
-    background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+    
     display: flex;
     height: 500px;
     padding: 4%;
@@ -338,6 +346,8 @@ header {
 
 .introduction-box {
     width: 30%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .introduction-box h1 {
@@ -359,7 +369,126 @@ header {
     width: 400px;
     margin-top: 1px;
 }
+.bigesst {
+    display: flex;
+    background-color: rgb(176, 217, 245);
+    height: 100%;
+}
+.parr1{
+    background-color: rgb(176, 217, 245);
+    overflow: hidden;
+    display:flexbox;
+    flex-wrap: wrap;
+}
+.parr1 p{
+    font-size: 35px;
+    color: rgb(0, 197, 155);
+    padding-left: 200px ;
+    padding-right: 80px;
+    flex-wrap: wrap;
 
+
+}
+.parr1 p+p{
+    font-size: 16px;
+    color: rgb(110, 109, 107);
+    padding-left: 200px ;
+    padding-right: 70px;
+    flex-wrap: wrap;
+   
+}
+
+.parr1 img{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.parr2{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+
+.artii{
+    margin: 30px;
+    margin-right: 0px;
+    height: 250px;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3%;
+}
+.artii img{
+    padding-top: 25px;
+    padding-left: 100px;
+}
+.artii h2{
+    color: rgb(0, 197, 155);
+}
+.artii p{
+    color: rgb(110, 109, 107);
+}
+
+.artii1{
+    margin: 30px;
+    margin-top: 10px;
+
+    height: 250px;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3%;
+}
+.artii1 img{
+    padding-top: 25px;
+    padding-left: 100px;
+}
+.artii1 h2{
+    color: rgb(0, 197, 155);
+}
+.artii1 p{
+    color: rgb(110, 109, 107);
+}
+
+.artii2{
+    margin: 30px;
+    margin-top: -20px;
+    height: 250px;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3%;
+    margin-right: 0px;
+}
+.artii2 img{
+    padding-top: 25px;
+    padding-left: 100px;
+}
+.artii2 h2{
+    color: rgb(0, 197, 155);
+}
+.artii2 p{
+    color: rgb(110, 109, 107);
+}
+
+.artii3{
+    margin: 30px;
+    height: 250px;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3%;
+   margin-top: 5px;
+}
+.artii3 img{
+    padding-top: 25px;
+    padding-left: 100px;
+}
+.artii3 h2{
+    color: rgb(0, 197, 155);
+}
+.artii3 p{
+    color: rgb(110, 109, 107);
+}
 .stats {
     text-align: center;
     width: 40%;
@@ -388,11 +517,13 @@ header {
 .stats-box-colomn-2 {
     display: flex;
     margin-top: 5%;
+    flex-wrap: wrap;
 }
 
 .stats-box-colomn-1 {
     display: flex;
     margin-top: 7px;
+    flex-wrap: wrap;
 }
 
 .box-3 p {
@@ -434,12 +565,14 @@ header {
 .offices-colomn-1 {
     display: flex;
     justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .offices-colomn-2 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 3%;
+  flex-wrap: wrap;
 }
 
 .offices-colomn-1 h1 {
@@ -514,15 +647,14 @@ header {
 /*Css for footer */
 .footer{
     background-color: rgb(255, 255, 255);
-    border-style: solid none none none;
-    border: 2px   rgb(199, 48, 48);
-    width: 1360px;
-   margin-left: -10px;
-   font-weight: lighter;
+    width: 100%;
+    font-weight: lighter;
+   
 }
 .footer a{
     text-decoration: none;
     color: rgb(52, 151, 218);
+    
 }
 .footer a :hover {
     text-decoration:underline;
@@ -531,5 +663,5 @@ header {
 .footer p{
     color: rgb(110, 109, 107);
     font-size: 14px;
-
+   
 }
